@@ -1,0 +1,274 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: tahoma;
+}
+
+body{
+    direction: rtl;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.active{
+    background-color: #17A2B8 !important;
+}
+.clicked{
+    background-color: #494E54 !important;
+}
+
+.fa-caret-down{
+    /* float: right; */
+    padding-right: 8px;
+}
+
+.sidebar{
+    position: fixed;
+    right: 0;
+    display: flex;
+    /* flex: 1; */
+    flex-direction: column;
+    width: 20vw;
+    min-height: 100vh;
+    background-color: aquamarine;
+    z-index: 1;
+    overflow-x: hidden;
+    background-color: #343A40;
+}
+
+.sidebar .brand-name{
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.sidebar .brand-name span{
+    font-size: 1.3em;
+    padding: 10px 0px;
+}
+
+.sidebar button{
+    font-size: 1.1em;
+    cursor: pointer;
+    background-color: #343A40;
+    margin-bottom: 0px;
+    border: none;
+    padding: 8px 0px;
+    color: #fff;
+}
+
+.sidebar button:hover{
+    background-color: #616a75;
+}
+
+.sidebar a:hover{
+    
+}
+
+.sidebar .dropdown-container{
+    height: 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #494E54;
+    /* background-color: red; */
+    overflow: hidden;
+}
+
+.sidebar .dropdown-container a{
+    color: #fff;
+    padding: 5px 0px;
+}
+
+.sidebar .dropdown-container a:hover{
+    background-color: #343A40;
+    color: #fff;
+    padding: 5px 0px;
+}
+
+.brand-name{
+    color: #fff;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    /* flex: 3; */
+    position: absolute;
+    left: 0;
+    width: 80vw;
+    height: 100vh;
+    /* z-index: 2; */
+    padding-right: 10px;
+    padding-top: 10px;
+    border: 0px solid black;
+}
+
+.list_menus_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: stretch; */
+    /* text-align: center; */
+    width: 60%;
+    margin: 2%;
+    padding: 2%;
+}
+
+.list_menus_form .title{
+    margin-bottom: 6%;
+    margin-right: 1%;
+}
+
+.list_menus_form input, select, label{
+    width: 100%;
+    margin: 1%;
+}
+
+.list_menus_form input[type=text]{
+    height: 1.8rem;
+    padding: 1%;
+    font-size: 1.1em;
+}
+
+.list_menus_form select{
+    height: 1.8rem;
+    /* padding: 1%; */
+    font-size: 1.1em;
+}
+
+.list_menus_form input[type=submit]{
+    width: 20%;
+    padding: 1%;
+    margin: 1%;
+    margin-top: 4%;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list_menus_form .ative_status_radio{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: start;
+    flex-flow: wrap row;
+    margin: 1%;
+    /* width: 80%; */
+    /* float: right; */
+}
+
+.list_menus_form .ative_status_radio label{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: start;
+    flex-flow: wrap row;
+    width: 10%;
+}
+
+.list_menus_form .ative_status_radio input{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    flex-flow: wrap row;
+    width: 1em;
+    height: 1em;
+    margin-top: 2%;
+    vertical-align: middle;
+}
+
+.login_body{
+    /* background-color: rgb(85, 79, 79); */
+    background: linear-gradient(120deg, #2980b9, #8e44ad);
+    height: 100vh;
+    overflow: hidden;
+    font-family: tahoma;
+}
+
+.login_form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10vh;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+    /* background-color: #888; */
+    /* border: 1px solid black; */
+    /* border-radius: 1%; */
+}
+
+.login_form form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    margin: 2%;
+}
+
+.login_form form input{
+    margin: 2%;
+    height: 2em;
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.4em;
+}
+
+.login_form form input[type=text], input[type=password]{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    outline: none;
+    transition: 0.5s;
+    border: none;
+    background: #ccc;
+}
+
+.login_form form input[type=text]:focus, input[type=password]:focus{
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.login_form form input[type=submit]{
+    width: 20%;
+    margin: 0 auto;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-top: 2%;
+    padding: 0 !important;
+}
+
+@media screen and (max-width: 600px) {
+    .list_menus_form .ative_status_radio label{
+        width: 40%;
+    }
+
+    .login_form form input{
+        margin: 2%;
+        height: 2em;
+        text-align: center;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.4em;
+    }
+
+    .login_form form input[type=submit]{
+        width: 40%;
+    }
+}
