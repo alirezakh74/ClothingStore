@@ -1,2 +1,2 @@
 # ClothingStore
-clothing store with procedural programming in php
+clothing store with functional programming in php
